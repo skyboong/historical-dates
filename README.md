@@ -60,6 +60,10 @@ uv run pytest -v
 uv build
 ```
 
-## 라이선스
+## License
 
-공개 전 저장소의 `LICENSE` 파일을 추가하고 라이선스 정책을 확정하세요.
+This project is licensed under the MIT License.
+
+Copyright (c) 2026 Boong Kee Choi.
+
+See [LICENSE](LICENSE) for details.
