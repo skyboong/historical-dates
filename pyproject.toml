@@ -1,0 +1,64 @@
+[project]
+name = "historical-dates"
+version = "0.1.0"
+description = "Python library for parsing, normalizing, and converting historical dates, including BCE and CE dates."
+readme = "README.md"
+
+authors = [
+    { name = "Boong Kee Choi", email = "stsboongkee@gmail.com" }
+]
+
+requires-python = ">=3.12"
+
+dependencies = [
+    "pydantic>=2.14.0",
+]
+
+keywords = [
+    "historical dates",
+    "BCE",
+    "CE",
+    "EDTF",
+    "chronology",
+    "timeline",
+    "history",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "pyright>=1.1.414",
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-ra"
+
+[tool.pyright]
+include = ["src", "tests"]
+pythonVersion = "3.12"
+typeCheckingMode = "standard"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+
+[tool.ruff.format]
+exclude = ["*.ipynb"]

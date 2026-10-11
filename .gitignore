@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Python build
+build/
+dist/
+*.egg-info/
+
+# Test / type-check cache
+.pytest_cache/
+.ruff_cache/
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# IDE
+.zed/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
