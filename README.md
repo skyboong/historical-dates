@@ -12,12 +12,56 @@
 
 ## 설치 및 실행
 
-개발 프로젝트 루트에서:
+## Installation
+
+`historical-dates`는 Python 3.12 이상에서 사용할 수 있습니다.
+
+### 1. GitHub에서 직접 설치 (pip)
 
 ```bash
-uv sync
-uv run python -c "import historical_dates; print(historical_dates.__file__)"
+pip install git+https://github.com/skyboong/historical-dates.git
 ```
+
+### 2. uv를 이용한 설치
+
+기존 uv 프로젝트에 의존성으로 추가하려면:
+
+```bash
+uv add git+https://github.com/skyboong/historical-dates.git
+```
+
+### 3. 개발용 설치
+
+소스코드를 내려받아 직접 개발하거나 수정하려면:
+
+```bash
+# 저장소 복제
+git clone https://github.com/skyboong/historical-dates.git
+
+# 프로젝트 폴더 이동
+cd historical-dates
+
+# 개발 환경 및 의존성 설치
+uv sync
+
+# 테스트 실행
+uv run pytest
+```
+
+### 4. 설치 확인
+
+```bash
+python -c "import historical_dates; print('Installation successful!')"
+```
+
+uv 환경에서는 다음 명령어를 사용할 수 있습니다.
+
+```bash
+uv run python -c "import historical_dates; print('Installation successful!')"
+```
+
+
+
 
 > PyPI 배포 여부와 요구 Python 버전은 프로젝트의 `pyproject.toml`에서 확인하세요.
 

@@ -2,6 +2,9 @@
 name = "historical-dates"
 version = "0.1.0"
 description = "Python library for parsing, normalizing, and converting historical dates, including BCE and CE dates."
+
+license = "MIT"
+
 readme = "README.md"
 
 authors = [
